@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Different Price Plan</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div>
+        <div class="main">
+            <h1>Transparent Pricing for Python Mastery.</h1>
+            <h2>Choose the perfect plan for your journey pay as grow your skills.</h2>
+        </div>
+        <div class="container">
+            <div class="grid">
+                <h1>Beginner</h1>
+                <span>$0 <strong>/ mo</strong></span>
+                <p>Basic Python concepts</p>
+                <p>5 projects</p>
+                <p>community support</p>
+                <button class="buy-button" data-plan="Beginner" data-amount="0">Start for free</button>
+            </div>
+            <div class="grid">
+                <h1>Intermediate</h1>
+                <span>$49 <strong>/ mo</strong></span>
+                <p>Advanced Python concepts</p>
+                <p>10 projects</p>
+                <p>Live mentorship</p>
+                <p>priority support</p>
+                <button class="buy-button" data-plan="Intermediate" data-amount="4900">Buy Intermediate</button>
+            </div>
+            <div class="grid">
+                <h1>Advanced</h1>
+                <span>$79 <strong>/ mo</strong></span>
+                <p>Expert Level Python</p>
+                <p>20 projects</p>
+                <p>1-on-1-mentorship</p>
+                <p>24/7 support</p>
+                <button class="buy-button" data-plan="Advanced" data-amount="7900">Buy Advanced</button>
+            </div>
+        </div>
+        
+       
+        <div id="paymentModal" style="display:none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2>Enter Your Details</h2>
+                <input type="text" id="modal-name" placeholder="Enter your name" required />
+                <input type="email" id="modal-email" placeholder="Enter your email" required />
+                <button id="pay-now">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
