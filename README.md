@@ -11,6 +11,7 @@ Yeh project XYZ ka description hai.
 
 # Install Dependency
 npm install
+# Change Directory
 cd backend
-# START SERVER
+# Start Server
 nodemon app.js
